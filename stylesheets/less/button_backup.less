@@ -1,0 +1,100 @@
+.button {
+	display: block;
+	float: left;
+	height: 38px;
+	line-height: 33px;
+	margin-right: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+	padding: 1px 20px;
+	.stroke-like();
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	box-shadow: inset 0px 5px 10px #777, inset 0px -1px 0px #b3b3b3;
+	-webkit-box-shadow: inset 0px 5px 10px #777, inset 0px -1px 0px #b3b3b3;
+	-moz-box-shadow: inset 0px 5px 10px #777, inset 0px -1px 0px #b3b3b3;
+	border: 1px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	&.large {
+		padding: 1px 40px;
+		height: 50px;
+		line-height: 44px;
+	}
+	&.small {
+		padding: 1px 20px;
+		height: 30px;
+		line-height: 24px;
+	}
+	&:hover {
+		background-color: #777;
+	}
+	&:active {
+		box-shadow: inset 0px 5px 10px #777;
+		-webkit-box-shadow: inset 0px 5px 10px #777;
+		-moz-box-shadow: inset 0px 5px 10px #777;
+		padding-top: 2px;
+		padding-bottom: 0px;
+	}
+	&.facebook {
+		background-color: #335e9b;
+		box-shadow: inset 0px 5px 10px #3e71b8, inset 0px -1px 0px #b3b3b3;
+		-webkit-box-shadow: inset 0px 5px 10px #3e71b8, inset 0px -1px 0px #b3b3b3;
+		-moz-box-shadow: inset 0px 5px 10px #3e71b8, inset 0px -1px 0px #b3b3b3;
+		&:hover {
+			background-color: #3e71b8;
+		}
+	}
+	&.twitter {
+		background-color: #00a7e7;
+		box-shadow: inset 0px 5px 10px #08b9ff, inset 0px -1px 0px #e5e5e5;
+		-webkit-box-shadow: inset 0px 5px 10px #08b9ff, inset 0px -1px 0px #e5e5e5;
+		-moz-box-shadow: inset 0px 5px 10px #08b9ff, inset 0px -1px 0px #e5e5e5;
+		&:hover {
+			background-color: #08b9ff;
+		}
+	}
+	&.blue {
+		background-color: #00adf8;
+		box-shadow: inset 0px 5px 10px #12b8ff, inset 0px -1px 0px #e5e5e5;
+		-webkit-box-shadow: inset 0px 5px 10px #12b8ff, inset 0px -1px 0px #e5e5e5;
+		-moz-box-shadow: inset 0px 5px 10px #12b8ff, inset 0px -1px 0px #e5e5e5;
+		&:hover {
+			background-color: #12b8ff;
+		}
+	}
+	&.white {
+		color: #000;
+		.stroke-like(rgba(0,0,0,0.2));
+		border: 1px solid #4d4d4d;
+		background-color: #f2f2f2;
+		background-image: url('@{imagePath}white-button.png');
+		box-shadow: inset 0px 7px 14px #e5f7ff, inset 0px 1px 0px #999;
+		-webkit-box-shadow: inset 0px 7px 14px #e5f7ff, inset 0px 1px 0px #999;
+		-moz-box-shadow: inset 0px 7px 14px #e5f7ff, inset 0px 1px 0px #999;
+		&:hover {
+			background-color: #f7f7f7;
+			box-shadow: inset 0px 5px 10px #f7f7f7, inset 0px 1px 0px #999;
+			-webkit-box-shadow: inset 0px 5px 10px #f7f7f7, inset 0px 1px 0px #999;
+			-moz-box-shadow: inset 0px 5px 10px #f7f7f7, inset 0px 1px 0px #999;
+		}
+		&:active {
+			background-image: none;
+		}
+	}
+	&.toggled {
+		background-image: url('@{imagePath}icons/ok.png');
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-color: #00adf8;
+		box-shadow: inset 0px -5px 10px #0078ab, inset 0px 1px 0px #666;
+		-webkit-box-shadow: inset 0px -5px 10px #0078ab, inset 0px 1px 0px #666;
+		-moz-box-shadow: inset 0px -5px 10px #0078ab, inset 0px 1px 0px #666;
+		&:hover {
+			background-color: #00adf8;
+		}
+	}
+}
